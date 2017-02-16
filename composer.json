@@ -1,0 +1,31 @@
+{
+    "name": "phpvcn/laravel-sms",
+    "description": "Laravel SMS 是为 Laravel 提供国内发送短信服务的支持包",
+    "keywords": ["sms", "laravel", "text messages", "send", "LuoSiMao"],
+    "homepage": "http://www.phpv.net",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Easy Rong",
+            "email": "easy@phpv.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/mail": ">=5.0.0",
+        "illuminate/log": ">=5.0.0",
+        "illuminate/queue": ">=5.0.0",
+        "illuminate/support": ">=5.0.0",
+        "illuminate/view": ">=5.0.0",
+        "guzzlehttp/guzzle": "~6"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpvcn\\SMS\\": "src/"
+        }
+    }
+}
