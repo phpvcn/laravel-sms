@@ -17,7 +17,7 @@ class LuosimaoSMS implements DriverInterface
      */
     protected $apiBase = 'http://sms-api.luosimao.com/v1';
 
-    protected $sign = '【快乐芒果】'; //签名
+    protected $sign = ''; //签名
     protected $apikey = '';
 
     /**
@@ -35,10 +35,11 @@ class LuosimaoSMS implements DriverInterface
      * @param $passCode
      * @param string $callbackOption
      */
-    public function __construct(Client $client, $api_key)
+    public function __construct(Client $client, $api_key, $sign)
     {
         $this->client = $client;
         $this->apikey = $api_key;
+        $this->sign = $sign;
     }
 
     /**

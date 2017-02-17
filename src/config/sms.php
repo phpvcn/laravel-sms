@@ -6,8 +6,6 @@
 return [
     'driver' => env('SMS_DRIVER', 'log'),
 
-    'from' => env('SMS_FROM', 'Your Number or Email'),
-
     'meilian' => [
         'api_user'  => env('MEILIAN_API_USER', 'Your MEILIAN API Username'),
         'api_pass'  => env('MEILIAN_API_PASS', 'Your MEILIAN API Password'),
@@ -16,5 +14,6 @@ return [
 
     'luosimao' => [
         'api_key' => env('LUOSIMAO_API_KEY', 'Your Luosimao Api Key'),
+        'sign' => env('LUOSIMAO_API_SIGN', 'Your Luosimao Sign'),
     ],
 ];

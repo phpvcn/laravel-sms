@@ -72,7 +72,8 @@ class DriverManager extends Manager
 
         $provider = new LuosimaoSMS(
             new Client,
-            $config['api_key']
+            $config['api_key'],
+            $config['sign']
         );
 
         return $provider;
