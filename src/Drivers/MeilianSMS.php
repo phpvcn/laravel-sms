@@ -1,9 +1,9 @@
 <?php
-namespace Phpvcn\SMS\Drivers;
+namespace Phpvcn\Sms\Drivers;
 
 use GuzzleHttp\Client;
-use Phpvcn\SMS\MakesRequests;
-use Phpvcn\SMS\OutgoingMessage;
+use Phpvcn\Sms\MakesRequests;
+use Phpvcn\Sms\OutgoingMessage;
 
 class MeilianSMS implements DriverInterface
 {
@@ -41,7 +41,7 @@ class MeilianSMS implements DriverInterface
     /**
      * Sends a SMS message.
      *
-     * @param \Phpvcn\SMS\OutgoingMessage $message
+     * @param \Phpvcn\Sms\OutgoingMessage $message
      */
     public function send(OutgoingMessage $message)
     {

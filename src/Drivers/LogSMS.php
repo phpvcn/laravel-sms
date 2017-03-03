@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpvcn\SMS\Drivers;
+namespace Phpvcn\Sms\Drivers;
 
 use Illuminate\Log\Writer;
-use Phpvcn\SMS\OutgoingMessage;
+use Phpvcn\Sms\OutgoingMessage;
 
 class LogSMS implements DriverInterface
 {
@@ -28,7 +28,7 @@ class LogSMS implements DriverInterface
     /**
      * Sends a SMS message.
      *
-     * @param \Phpvcn\SMS\OutgoingMessage $message
+     * @param \Phpvcn\Sms\OutgoingMessage $message
      */
     public function send(OutgoingMessage $message)
     {

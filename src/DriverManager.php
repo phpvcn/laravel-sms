@@ -1,12 +1,12 @@
 <?php
 
-namespace Phpvcn\SMS;
+namespace Phpvcn\Sms;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Manager;
-use Phpvcn\SMS\Drivers\LogSMS;
-use Phpvcn\SMS\Drivers\LuosimaoSMS;
-use Phpvcn\SMS\Drivers\MeilianSMS;
+use Phpvcn\Sms\Drivers\LogSMS;
+use Phpvcn\Sms\Drivers\LuosimaoSMS;
+use Phpvcn\Sms\Drivers\MeilianSMS;
 
 class DriverManager extends Manager
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpvcn\SMS;
+namespace Phpvcn\Sms;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -30,7 +30,7 @@ class SMSServiceProvider extends ServiceProvider
     {
         $this->app->singleton('sms', function ($app) {
             $this->registerSender();
-            $sms = new SMS($app['sms.sender'], $app['view'], $app['events']);
+            $sms = new Sms($app['sms.sender'], $app['view'], $app['events']);
             $this->setSMSDependencies($sms, $app);
 
             return $sms;

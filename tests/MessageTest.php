@@ -1,7 +1,7 @@
 <?php
 
 use Mockery as m;
-use Phpvcn\SMS\OutgoingMessage;
+use Phpvcn\Sms\OutgoingMessage;
 
 class MessageTest extends \PHPUnit_Framework_TestCase
 {

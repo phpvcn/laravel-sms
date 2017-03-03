@@ -1,13 +1,13 @@
 <?php
 
-namespace Phpvcn\SMS\Events;
+namespace Phpvcn\Sms\Events;
 
 class SmsSending
 {
     /**
      * The OutgoingMessage instance.
      *
-     * @var \Phpvcn\SMS\OutgoingMessage
+     * @var \Phpvcn\Sms\OutgoingMessage
      */
     public $message;
 
@@ -21,7 +21,7 @@ class SmsSending
     /**
      * Create a new event instance.
      *
-     * @param  \Phpvcn\SMS\OutgoingMessage  $message
+     * @param  \Phpvcn\Sms\OutgoingMessage  $message
      * @return void
      */
     public function __construct($message, $response)

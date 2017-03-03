@@ -1,10 +1,10 @@
 <?php
 
-namespace Phpvcn\SMS\Facades;
+namespace Phpvcn\Sms\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class SMS extends Facade
+class Sms extends Facade
 {
     /**
      * Get the registered name of the component.

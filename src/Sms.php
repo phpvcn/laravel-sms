@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpvcn\SMS;
+namespace Phpvcn\Sms;
 
 use Closure;
 use Illuminate\Container\Container;
@@ -8,15 +8,15 @@ use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Queue\QueueManager;
 use Illuminate\Support\Str;
-use Phpvcn\SMS\Drivers\DriverInterface;
+use Phpvcn\Sms\Drivers\DriverInterface;
 use SuperClosure\Serializer;
 
-class SMS
+class Sms
 {
     /**
      * The Driver Interface instance.
      *
-     * @var \Phpvcn\SMS\Drivers\DriverInterface
+     * @var \Phpvcn\Sms\Drivers\DriverInterface
      */
     protected $driver;
 
@@ -100,7 +100,7 @@ class SMS
      * @param array    $data     The data that needs to be passed into the view.
      * @param \Closure $callback The methods that you wish to fun on the message.
      *
-     * @return \Phpvcn\SMS\OutgoingMessage The outgoing message that was sent.
+     * @return \Phpvcn\Sms\OutgoingMessage The outgoing message that was sent.
      */
     public function send($view, array $data = [], $callback = null)
     {
@@ -126,7 +126,7 @@ class SMS
     /**
      * Creates a new Message instance.
      *
-     * @return \Phpvcn\SMS\OutgoingMessage
+     * @return \Phpvcn\Sms\OutgoingMessage
      */
     protected function createOutgoingMessage()
     {

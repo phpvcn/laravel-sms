@@ -1,16 +1,16 @@
 <?php
 
 use GuzzleHttp\Client;
-use Phpvcn\SMS\Drivers\LuosimaoSMS;
-use Phpvcn\SMS\MakesRequests;
-use Phpvcn\SMS\OutgoingMessage;
+use Phpvcn\Sms\Drivers\LuosimaoSMS;
+use Phpvcn\Sms\MakesRequests;
+use Phpvcn\Sms\OutgoingMessage;
 use Mockery as m;
 
 class LuosimaoSMSTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
-     * @var \Phpvcn\SMS\SMS
+     * @var \Phpvcn\Sms\SMS
      */
     protected $sms;
 
@@ -27,7 +27,7 @@ class LuosimaoSMSTest extends \PHPUnit_Framework_TestCase
         $password = getenv('SMS77PASSWORD');
         $debug = getenv('SMS77DEBUG', 1);
         $this->driver = new LuosimaoSMS(new GuzzleHttp\Client(), $username, $password, $debug);
-        $this->sms = new \Phpvcn\SMS\SMS($this->driver);
+        $this->sms = new \Phpvcn\Sms\SMS($this->driver);
     }
 
     public function testSendSMS()

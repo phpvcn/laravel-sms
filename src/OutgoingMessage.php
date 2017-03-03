@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpvcn\SMS;
+namespace Phpvcn\Sms;
 
 use Illuminate\View\Factory;
 

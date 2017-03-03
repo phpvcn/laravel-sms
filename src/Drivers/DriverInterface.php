@@ -1,15 +1,15 @@
 <?php
 
-namespace Phpvcn\SMS\Drivers;
+namespace Phpvcn\Sms\Drivers;
 
-use Phpvcn\SMS\OutgoingMessage;
+use Phpvcn\Sms\OutgoingMessage;
 
 interface DriverInterface
 {
     /**
      * Sends a SMS message.
      *
-     * @param \Phpvcn\SMS\OutgoingMessage $message
+     * @param \Phpvcn\Sms\OutgoingMessage $message
      */
     public function send(OutgoingMessage $message);
 
