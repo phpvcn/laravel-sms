@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Phpvcn\\SMS\\": "src/"
+            "Phpvcn\\Sms\\": "src/"
         }
     }
 }
