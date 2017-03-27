@@ -4,7 +4,7 @@ namespace Phpvcn\Sms;
 
 use Illuminate\Support\ServiceProvider;
 
-class SMSServiceProvider extends ServiceProvider
+class SmsServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
