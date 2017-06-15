@@ -17,7 +17,7 @@ class DriverManager extends Manager
      */
     public function getDefaultDriver()
     {
-        return $this->app['config']['sms.driver'];
+        return $this->app['config']['services.sms_driver'];
     }
 
     /**
@@ -49,7 +49,7 @@ class DriverManager extends Manager
      */
     protected function createMeilianDriver()
     {
-        $config = $this->app['config']->get('sms.meilian', []);
+        $config = $this->app['config']->get('services.meilian', []);
 
         $provider = new MeilianSMS(
             new Client,
@@ -68,7 +68,7 @@ class DriverManager extends Manager
      */
     protected function createLuosimaoDriver()
     {
-        $config = $this->app['config']->get('sms.luosimao', []);
+        $config = $this->app['config']->get('services.luosimao', []);
 
         $provider = new LuosimaoSMS(
             new Client,

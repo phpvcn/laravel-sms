@@ -4,7 +4,7 @@
  * https://github.com/phpvcn/Laravel-sms/wiki/#docs-configuration for more information.
  */
 return [
-    'driver' => env('SMS_DRIVER', 'log'),
+    'sms_driver' => env('SMS_DRIVER', 'log'),
 
     'meilian' => [
         'api_user'  => env('MEILIAN_API_USER', 'Your MEILIAN API Username'),
