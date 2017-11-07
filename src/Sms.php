@@ -73,10 +73,8 @@ class Sms
      */
     public function driver($driver)
     {
-        $this->container['sms.sender'] = $this->container->share(function ($app) use ($driver) {
-            return (new DriverManager($app))->driver($driver);
-        });
-
+        $app = app();
+        $this->container['sms.sender'] = (new DriverManager($app))->driver($driver);
         $this->driver = $this->container['sms.sender'];
         return $this;
     }
@@ -115,6 +113,7 @@ class Sms
         }
 
         $response = $this->driver->send($message);
+        $this->to = [];
 
         if ($this->events) {
             $this->events->fire(new Events\SmsSending($message, $response));
